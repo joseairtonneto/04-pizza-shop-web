@@ -23,7 +23,7 @@ export function OrderStatus({ status }: OrderStatusProps) {
 
   return (
     <div className='flex items-center gap-2'>
-      <span className={`h-2 w-2 rounded-full ${colors[status]}`}></span>
+      <span data-testid='badge' className={`h-2 w-2 rounded-full ${colors[status]}`}></span>
       <span className='text-muted-foreground font-medium'>{statusText[status]}</span>
     </div>
   )
